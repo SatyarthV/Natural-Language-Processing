@@ -21,22 +21,22 @@ sentence_detector = nltk.data.load('tokenizers/punkt/german.pickle')
 punctuation_tokens = [ '\n','/',"'—" ,' #'  ,'”',  '·',' . ','’', '‘','%','.','#','@' ,"'—",'|','«','» |','|','»','.', '..', '...', ',', ';', ':', '(', ')', '"', '“',',','„','\'', '[', ']', '{', '}', '?', '!', '-', u'–', '+', '*', '--', '\'\'', '``']
 punctuation = "|?.!/;:()&+„.“|0-9'— ·#\r\n\r\n\r\n\xa0-\xa0\r\n\r\n/"
 
-Yahoo_data = pd.read_csv(r'/home/fractaluser/Downloads/German Data/Yahoo_Data.csv')
+Yahoo_data = pd.read_csv(r'/home/..../Yahoo_Data.csv')
 Yahoo_data = Yahoo_data.drop_duplicates(['Article'])
 
-Handelsblatt_data = pd.read_csv(r'/home/fractaluser/Downloads/German Data/Handelsblatt.csv')
+Handelsblatt_data = pd.read_csv(r'/home/..../Handelsblatt.csv')
 Handelsblatt_data = Handelsblatt_data.drop('Unnamed: 0' , 1)  
 Handelsblatt_data = Handelsblatt_data.drop_duplicates(['Article'])
 
-Blog_data_1 = pd.read_csv(r'/home/fractaluser/Downloads/German Data/Final_Blog2.csv')
+Blog_data_1 = pd.read_csv(r'/home/..../Final_Blog2.csv')
 Blog_data_1 = Blog_data_1.drop('Unnamed: 0' , 1)
 Blog_data_1 = Blog_data_1.drop_duplicates(['Article'])
 
-Blog_data_2 = pd.read_csv(r'/home/fractaluser/Downloads/German Data/Comments_Blog.csv')
+Blog_data_2 = pd.read_csv(r'/home/..../Comments_Blog.csv')
 Blog_data_2 = Blog_data_2.drop('Unnamed: 0' , 1)
 Blog_data_2 = Blog_data_2.drop_duplicates(['Article'])
 
-Taz_data = pd.read_csv('/home/fractaluser/Downloads/German Data/taz.csv')
+Taz_data = pd.read_csv('/home/..../taz.csv')
 Taz_data = Taz_data.drop('Unnamed: 0' , 1)
 Taz_data = Taz_data.drop_duplicates(['Article'])
 
